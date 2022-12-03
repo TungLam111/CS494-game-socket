@@ -1,5 +1,1 @@
-﻿  Socket-game.cpp
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(29,12): warning C4101: 'readfds': unreferenced local variable
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(27,10): warning C4101: 'buffer': unreferenced local variable
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(24,9): warning C4101: 'max_client': unreferenced local variable
-  Socket-game.vcxproj -> D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Debug\Socket-game.exe
+﻿  Socket-game.vcxproj -> D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Debug\Socket-game.exe
