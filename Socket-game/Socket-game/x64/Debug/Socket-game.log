@@ -1,15 +1,8 @@
 ﻿  Socket-game.cpp
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(64,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(240,30): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(314,29): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(323,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(341,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(355,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(362,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(373,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(403,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(449,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(472,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(596,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(630,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(176,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(203,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(217,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(271,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(277,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\Socket-game\Socket-game.cpp(283,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Socket-game.vcxproj -> D:\everything-code-move-from-disk-C\Personal\CS494-game-socket\Socket-game\x64\Debug\Socket-game.exe

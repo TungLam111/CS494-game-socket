@@ -40,26 +40,31 @@ def login(connection, ip, port):
           nickname = message.decode('utf-8')
           isRegistered = True
 
+          nickname = nickname.rstrip(' \t\r\n\0')
+          print("Length of nickname: {}".format(len(nickname)))
+
           if len(nickname) > 10:
                isRegistered = False
                reply = 'Nickname should be shorter than 10 characters'
-
-          for char in nickname:
-               if (char.isalnum() == False and char != '_'):
-                    isRegistered = False
-                    reply = 'Invalid character.'
-                    break
-                    
-          # check duplicate               
-          if players != []:
-               for player in players:
-                    if player.nickname == nickname:
+          
+          if isRegistered:
+               for char in nickname:
+                    if (char.isalnum() == False and char != '_'):
                          isRegistered = False
-                         reply = "Nickname existed"
+                         reply = 'Invalid character.'
                          break
+                    
+               # check duplicate 
+          if isRegistered :
+               if players != []:
+                    for player in players:
+                         if player.nickname == nickname:
+                              isRegistered = False
+                              reply = "Nickname existed"
+                              break
 
           if isRegistered == True:
-               print("Receive Player nickname: ",nickname)
+               print("Receive Player nickname: {}".format(nickname))
           
           if isRegistered == True:
                reply = 'ok_' + str(len(players))
@@ -78,7 +83,9 @@ def playNewRound(connection, player, a, b, operation, index):
      connection.sendall(str.encode(  str(a) + operation  + str(b)  )) 
 
      answer = connection.recv(1020).decode('utf-8') 
-     print(player.info)
+     answer = answer.rstrip(' \t\r\n\0')
+
+     player.info()
 
      player.answer = int(answer)
      player.timer = time.time() - player.timer
@@ -97,7 +104,7 @@ def updateGameStatus(connection, Message):
      _ = connection.recv(1020)
      currentRound += 1
 
-def server(port = 1123, host = ''):
+def initServer(port = 1123, host = ''):
      global players
      global maxPlayer
      global maxTime
@@ -105,11 +112,24 @@ def server(port = 1123, host = ''):
      global currentRound
 
      while True:
+          isQuiz = False
+          players = []
+          maxPlayer = 2
+          maxTime = None
+          numPlayers = 0
+          currentRound = 0
 
           while True:
-               maxPlayer = int(input('Maximum numbers of players (2 to 10prs): '))
+               maxPlayer = int(input('Maximum numbers of players (2 to 10prs, input -1 to quit): '))
                if maxPlayer >= 2 and maxPlayer <=10:
                     break
+               if maxPlayer == -1:
+                    isQuiz = True 
+                    break
+          
+          if isQuiz == True:
+               print('Quiting game!. Good bye')
+               break
 
           while True:
                maxTime = int(input('-> Input max time (10 to 15 seconds): '))
@@ -243,8 +263,10 @@ def server(port = 1123, host = ''):
 
           print("Game End - Next Race")
           port += 1
-
-     server.close()
+     
+     if server != None:
+          print("Closing connection")
+          server.close()
 
 if __name__ == '__main__':
-     server()
+     initServer()
